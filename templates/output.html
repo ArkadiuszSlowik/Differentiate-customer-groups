@@ -11,13 +11,14 @@
 </head>
 
 <body style="background: rgb(245, 245, 245);"> 
-
+<div class="container">
+    
 {% if prediction is defined %}   
     <h1>
-        <div style="text-align:center">Predicted Output </div>
+        <div>Predicted Output </div>
     </h1>
     <hr>
-        <div class="card text-center" style="width:21.5em; margin:0 auto;">
+        <div>
             <div class="card-body">
                 <p class="card text">
                     <h1>
@@ -27,14 +28,14 @@
             </div>
         </div>
     </hr>
-    <center>
         <a class="btn btn-success" href="{{url_for('download')}}">Download</a>
-    </center>
 {% else %}
     <h1>
-        <div style="text-align:center">The correct file has not been entered!</div>
+        <div>The correct file has not been entered!</div>
     </h1>
 {% endif %}
+    
+    </div>
 
 
 </body>
